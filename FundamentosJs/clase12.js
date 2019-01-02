@@ -18,14 +18,19 @@ var juan={
 
 const MAYORIA_DE_EDAD =18
 
-var esMayorDeEdad = function (persona){
-    return persona.edad >= MAYORIA_DE_EDAD
-}
+const esMayorDeEdad = ({edad}) => edad >= MAYORIA_DE_EDAD
+
 
 function imprimirSiEsMayorDeEdad(persona){
     if(esMayorDeEdad(persona)){
         console.log(`${persona.nombre} es mayor de edad , tiene ${persona.edad} años`)
     }else{
         console.log(`${persona.nombre} es menor de edad, tiene ${persona.edad} años`)
+    }
+}
+
+function permitirAcceso(persona){
+    if(!esMayorDeEdad(persona)){
+        console.log('Acceso denegado')
     }
 }
