@@ -16,8 +16,10 @@ Persona.prototype.soyAlto= function(){
     }
 }
 
-var sacha = new Persona('Sacha', 'Lifszyc',1.9)
-var juan = new Persona('Juan', 'Zuluaga', 1.2)
-var arturo = new Persona('Arturo', 'Salazar', 1.8)
+var sacha = new Persona('Sacha', 'Lifszyc',1.72)
+var juan = new Persona('Juan', 'Zuluaga', 1.61)
+var arturo = new Persona('Arturo', 'Salazar', 1.89)
 
-
+sacha.soyAlto()
+juan.soyAlto()
+arturo.soyAlto()
